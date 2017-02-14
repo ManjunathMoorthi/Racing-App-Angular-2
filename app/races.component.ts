@@ -34,7 +34,8 @@ export class RacesComponent {
   totalCost() {
     let sum = 0;
     for (let race of this.races) {
-      if (race.isRacing) sum += race.entryFee;
+      if (race.isRacing===true) 
+      sum += race.entryFee;
     }
     return sum;
   }
