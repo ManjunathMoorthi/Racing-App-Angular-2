@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Race } from './race';
+import { race } from './race';
 import { RACES } from './mocks';
 
 @Component({
