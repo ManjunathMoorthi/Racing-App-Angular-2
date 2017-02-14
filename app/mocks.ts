@@ -1,4 +1,4 @@
-import { Race } from './race';
+import { race } from './race';
 
  export const RACES: race[] = [{
   "id": 1,
