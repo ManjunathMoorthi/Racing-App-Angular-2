@@ -5,21 +5,21 @@ import { RACES } from './mocks';
 @Component({
   selector: 'my-races',
   templateUrl: 'app/races.component.html',
-  styleUrls: ['app/races.component.css']
+  styleUrls:['app/races.component.css']
 })
 export class RacesComponent {
   heading = "Ultra Racing Schedule"
   cash = 10000;
   races: race[];
-  ngOnInit(){
-    this.races= RACES;
+
+  ngOnInit() {
+    this.races = RACES;
   }
 
   totalCost() {
     let sum = 0;
     for (let race of this.races) {
-      if (race.isRacing===true) 
-      sum += race.entryFee;
+      if (race.isRacing) sum += race.entryFee;
     }
     return sum;
   }
@@ -27,5 +27,12 @@ export class RacesComponent {
   cashLeft() {
     return this.cash - this.totalCost();
   }
-
+  cancelRace(race) {
+  race.isRacing = false;
+}
+ enterRace(race){
+   if (this.cashLeft()>race.entryFee)
+     race.isRacing=true;
+   else alert("You don't have enough cash");
+ }
 }
