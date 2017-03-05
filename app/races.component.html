@@ -1,8 +1,10 @@
+
 <main class="container" role="main">
-<h2>Money for racing: <input type="text" class="cash"  [(ngModel)]="cash" ></h2>
-<h2>Cash left to enter races: <span>{{cashLeft() | currency:'USD':true}}</span> </h2>
+<h2>Money for racing: <input type="text" class="cash" [(ngModel)]="cash"></h2>
 <ul>
+
   <li class="card" *ngFor="let race of races" [class.racing]="race.isRacing" >
+
     <div class="panel-body">
       <div class="photo">
         <img [src]="race.image" [alt]="race.imageDescription">
@@ -26,8 +28,9 @@
           </td>
         </tr>
       </table>
-    </div>
+   </div>
   </li>
+ 
 </ul>
 <div class="price-total">
   <h3>Total cost:</h3>
