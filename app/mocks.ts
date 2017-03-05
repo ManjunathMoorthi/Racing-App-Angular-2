@@ -1,13 +1,13 @@
-import { race } from './race';
+import { Race } from './race';
 
- export const RACES: race[] = [{
+export const RACES: Race[] = [{
   "id": 1,
   "name": "Daytona Thunderdome",
   "date": new Date('2512-01-04T14:00:00'),
   "about": "Race through the ruins of an ancient Florida battle arena.",
   "entryFee": 3200,
   "isRacing": false,
-  "image": "http://www.thunderdomeracing.com/images/logo.png",
+  "image": "https://media-cdn.tripadvisor.com/media/photo-s/03/d4/40/8c/miami.jpg",
   "imageDescription": "Race track with laser lanes"
 }, {
   "id": 2,
@@ -16,7 +16,7 @@ import { race } from './race';
   "about": "Drift down the streets of a city almost sunk under the ocean.",
   "entryFee": 4700,
   "isRacing": true,
-  "image": "https://s-media-cache-ak0.pinimg.com/originals/66/10/91/6610915c5ec7a7458761089cd9c15e67.jpg",
+  "image": "http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1429821784/CHARMING0415-san-francisco.jpg?itok=vmayDoQQ",
   "imageDescription": "Golden Gate Bridge with lasers"
 }, {
   "id": 3,
@@ -25,6 +25,7 @@ import { race } from './race';
   "about": "Fly between buildings in the electronic sky.",
   "entryFee": 4300,
   "isRacing": true,
-  "image": "http://www.nationalgeographic.com/new-york-city-skyline-tallest-midtown-manhattan/assets/img/articleImg/01nyskyline640.jpg",
+  "image": "http://www.newyorker.com/wp-content/uploads/2015/12/Veix-Goodbye-New-York-Color-1200.jpg",
   "imageDescription": "Bridge overlooking New York City"
-}];
+}]; 
+
